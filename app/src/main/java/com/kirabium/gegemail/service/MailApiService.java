@@ -3,6 +3,9 @@ package com.kirabium.gegemail.service;
 
 import com.kirabium.gegemail.model.Mail;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 
@@ -28,4 +31,6 @@ public interface MailApiService {
      * @param mail
      */
     void createMail(Mail mail);
+
+    ArrayList<Mail> getMailsFilteredByDate(Date date);
 }
